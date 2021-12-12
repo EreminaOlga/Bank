@@ -12,10 +12,10 @@ public class MyBankApp {
         Manager A = new Manager();
         A.checkFirstName();
         A.checkBalanceOfDebt (creditDlyaPeti);
+        A.checkPosition();
 
         Cashier B = new Cashier();
         B.checkPosition();
-        B.checkFirstName();
 
     }
 
