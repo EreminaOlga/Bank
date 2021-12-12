@@ -3,8 +3,7 @@ package Bank;
 import People.Manager;
 
 public class BankDepartment {
-    String typeOffice;
-    int kolvoSotr;
-    String perechenUslug;
+    public String typeOffice;
+    public int kolvoSotr;
     Manager A;
 }

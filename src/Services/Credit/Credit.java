@@ -1,8 +1,6 @@
 package Services.Credit;
 
-import Services.Services;
-
-public class Credit extends Services {
+public class Credit {
 
     String target;//цель
     double procent;

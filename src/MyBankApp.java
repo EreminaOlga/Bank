@@ -1,3 +1,4 @@
+import People.Cashier;
 import People.Manager;
 import Services.Credit.Hypothec;
 
@@ -11,6 +12,9 @@ public class MyBankApp {
         Manager A = new Manager();
         A.checkFirstName();
         A.checkBalanceOfDebt (creditDlyaPeti);
+
+        Cashier B = new Cashier();
+        B.checkPosition();
 
     }
 

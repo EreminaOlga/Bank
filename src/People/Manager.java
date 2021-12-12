@@ -12,4 +12,8 @@ public class Manager extends LeadManager {
         creditDlyaPeti.checkBalanceOfDebt();
     }
 
+    public void checkPosition(){
+        System.out.println("Должность: менеджер");
+    }
+
 }
