@@ -15,6 +15,7 @@ public class MyBankApp {
 
         Cashier B = new Cashier();
         B.checkPosition();
+        B.checkFirstName();
 
     }
 
