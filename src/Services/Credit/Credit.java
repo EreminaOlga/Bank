@@ -8,7 +8,7 @@ public class Credit {
     double monthlyPayment; //ежемесячный платеж
     double term; //срок
     String preferentialTerms; //льготные условия
-    private double balanceOfDebt; //остаток задолженности
+    public double balanceOfDebt; //остаток задолженности
 
     public void getACredit(){
         System.out.println("Кредит оформлен");

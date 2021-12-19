@@ -2,9 +2,9 @@ package Services.Credit;
 
 public class Hypothec extends Credit {
 
-    private String creditHolidays;
+    public String creditHolidays;
 
-    void buyAnApartment () {
+    public void buyAnApartment () {
         System.out.println("Квартира куплена");
     }
 
