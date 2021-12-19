@@ -6,5 +6,6 @@ public class BankOffice extends Bank {
     String workSchedule;
     BankDepartment creditDepartment; //отдел кредитования
     BankDepartment departmentOfForeignExchangeTransaction; //отдел валютно-обменных операций
+    ATM Bankomat;
 
     }
