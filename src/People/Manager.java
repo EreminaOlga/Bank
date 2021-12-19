@@ -12,7 +12,7 @@ public class Manager extends LeadManager {
         System.out.println("Должность: менеджер");
     }
 
-    void checkBalanceOfDebt (Hypothec creditDlyaPeti){
+   public void checkBalanceOfDebt (Hypothec creditDlyaPeti){
         creditDlyaPeti.checkBalanceOfDebt();
     }
 

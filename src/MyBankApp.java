@@ -1,3 +1,5 @@
+import Bank.ATM;
+import Bank.BankOffice;
 import People.Cashier;
 import People.Manager;
 import Services.Credit.Hypothec;
@@ -16,6 +18,11 @@ public class MyBankApp {
 
         Cashier B = new Cashier();
         B.checkPosition();
+
+        BankOffice moshennikBank = new BankOffice();
+
+        ATM Bankomat = new ATM();
+        Bankomat.giveMeMoney();
 
     }
 

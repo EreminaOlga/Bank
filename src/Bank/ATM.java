@@ -2,10 +2,9 @@ package Bank;
 
 public class ATM { //банкомат
 
-    double giveMoney(){
-        return 1234;
+    public double giveMeMoney(){
+        System.out.println("Возьмите деньги");
+                return 123;
 
     }
-
-
-}
+    }
