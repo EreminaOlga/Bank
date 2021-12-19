@@ -2,9 +2,9 @@ package People;
 
 public class Sotrudnik {
 
-    public String firstName;
-    public String lastName;
-    public String position;
+    private String firstName;
+    private String lastName;
+    private String position;
 
     public void checkFirstName(){
         System.out.println("Я сотрудник Вася");

@@ -4,6 +4,6 @@ import People.Manager;
 
 public class BankDepartment {
     public String typeOffice;
-    public int kolvoSotr;
+    private int kolvoSotr;
     Manager A;
 }

@@ -21,9 +21,11 @@ public class MyBankApp {
 
         BankOffice moshennikBank = new BankOffice();
 
-        ATM Bankomat = new ATM();
-        Bankomat.giveMeMoney();
+        ATM Bankomat = moshennikBank.getBankomat();
+        int myMoney = Bankomat.getMoney();
+        System.out.println(myMoney);
 
     }
+
 
 }

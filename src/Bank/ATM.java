@@ -2,9 +2,14 @@ package Bank;
 
 public class ATM { //банкомат
 
-    public double giveMeMoney(){
-        System.out.println("Возьмите деньги");
-                return 123;
-
+    public int getMoney() {
+        return money;
     }
+
+    public void setMoney(int money) {
+        this.money = money;
+    }
+
+    private int money;
+
     }
