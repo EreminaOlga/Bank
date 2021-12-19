@@ -20,10 +20,12 @@ public class MyBankApp {
         B.checkPosition();
 
         BankOffice moshennikBank = new BankOffice();
+        moshennikBank.setBankomat(new ATM());
 
         ATM Bankomat = moshennikBank.getBankomat();
         int myMoney = Bankomat.getMoney();
         System.out.println(myMoney);
+
 
     }
 
