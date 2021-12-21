@@ -26,6 +26,12 @@ public class MyBankApp {
         int myMoney = Bankomat.getMoney();
         System.out.println(myMoney);
 
+        int myBalance = 63759;
+        int monthlyPayment = 10000;
+        myBalance = myBalance - monthlyPayment;
+
+        System.out.println(myBalance);
+
 
     }
 

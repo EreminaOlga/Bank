@@ -12,4 +12,6 @@ public class ATM { //банкомат
 
     private int money;
 
+    public void checkTheBalance() {
     }
+}
