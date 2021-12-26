@@ -32,7 +32,13 @@ public class MyBankApp {
 
         System.out.println(myBalance);
 
-
+        BankOffice sberNaSkhodne = new BankOffice();
+            ATM ATM = sberNaSkhodne.getInfo( "перевод денег");
+            int myMoney2 = 100;
+            int momsAccount = 654348;
+            ATM.sendMoney ( myMoney2 + momsAccount);
+            momsAccount = momsAccount + myMoney2;
+        System.out.println(momsAccount);
     }
 
 

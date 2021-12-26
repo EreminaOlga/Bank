@@ -17,5 +17,10 @@ public class BankOffice extends Bank {
 
     private ATM Bankomat;
 
-      }
+    public ATM getInfo(String s) {
+        if(s.equals("перевод денег"))
+            return new ATM();
+        return null;
+    }
+}
 
