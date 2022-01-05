@@ -8,12 +8,12 @@ public class MyBankApp {
 
     public static void main(String[] args) {
 
-        Hypothec creditDlyaPeti = new Hypothec();
-        creditDlyaPeti.getACreditHolidays();
+        Hypothec creditDlyaKlient = new Hypothec();
+        creditDlyaKlient.getACreditHolidays();
 
         Manager A = new Manager();
         A.checkFirstName();
-        A.checkBalanceOfDebt (creditDlyaPeti);
+        A.checkBalanceOfDebt (creditDlyaKlient);
         A.checkPosition();
 
         Cashier B = new Cashier();
@@ -39,6 +39,24 @@ public class MyBankApp {
             ATM.sendMoney ( myMoney2 + momsAccount);
             momsAccount = momsAccount + myMoney2;
         System.out.println(momsAccount);
+
+        String s = myBalance > 50000 ? "оплатить месячный платеж по ипотеке" : "взять кредитные каникулы";
+        System.out.println(s);
+
+        if (clientHasCredit())
+            System.out.println("Выдача кредита не одобрена");
+        else if (clientHasMatCapital())
+            System.out.println("Выдача кредита на основе мат капитала");
+        else
+            System.out.println("заявка на кредит одобрена");
+    }
+
+    private static boolean clientHasMatCapital() {
+        return true;
+    }
+
+    private static boolean clientHasCredit() {
+        return false;
     }
 
 
