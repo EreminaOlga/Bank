@@ -53,6 +53,14 @@ public class MyBankApp {
             myBalance = myBalance - monthlyPayment ;
             System.out.println(myBalance);
         }
+
+        int clientsInBank = 0;
+        do {
+            clientsInBank++;
+            System.out.println(clientsInBank);
+        } while (clientsInBank < 20);
+
+
     }
 
     private static boolean clientHasMatCapital() {
