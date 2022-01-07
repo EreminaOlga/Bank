@@ -28,7 +28,6 @@ public class MyBankApp {
 
         int myBalance = 63759;
         int monthlyPayment = 10000;
-        myBalance = myBalance - monthlyPayment;
 
         System.out.println(myBalance);
 
@@ -49,6 +48,11 @@ public class MyBankApp {
             System.out.println("Выдача кредита на основе мат капитала");
         else
             System.out.println("заявка на кредит одобрена");
+
+        while (myBalance > 10000){
+            myBalance = myBalance - monthlyPayment ;
+            System.out.println(myBalance);
+        }
     }
 
     private static boolean clientHasMatCapital() {
