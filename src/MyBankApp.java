@@ -2,13 +2,16 @@ import Bank.ATM;
 import Bank.BankOffice;
 import People.Cashier;
 import People.Manager;
+import Services.Credit.Credit;
 import Services.Credit.Hypothec;
+
+import javax.xml.namespace.QName;
 
 public class MyBankApp {
 
     public static void main(String[] args) {
 
-        Hypothec creditDlyaKlient = new Hypothec();
+        Hypothec creditDlyaKlient = new Hypothec("1");
         creditDlyaKlient.getACreditHolidays();
 
         Manager A = new Manager();
@@ -65,6 +68,16 @@ public class MyBankApp {
             System.out.println("Окно: " + window + ", номер в очереди: " + clientsInLine);
         }
 
+        Credit CredityDlyaKlientov[] = {new Credit("Кредит"), new Credit("Ипотека"), new Credit("Автокредит")};
+
+        for(Credit credit : CredityDlyaKlientov){
+            System.out.println(credit.toString());
+        }
+        CredityDlyaKlientov[1] = new Credit("Ипотека на новостройку");
+
+        for(Credit credit : CredityDlyaKlientov){
+            System.out.println(credit.toString());
+        }
 
     }
 
