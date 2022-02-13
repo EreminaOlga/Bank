@@ -1,4 +1,4 @@
-package Services.Credit;
+package services;
 
 public class Credit {
 

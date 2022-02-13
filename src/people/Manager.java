@@ -1,6 +1,6 @@
-package People;
+package people;
 
-import Services.Credit.Hypothec;
+import services.Hypothec;
 
 public class Manager extends LeadManager {
 

@@ -1,6 +1,6 @@
-package Bank;
+package bank;
 
-import People.Manager;
+import people.Manager;
 
 public class BankDepartment {
     public String typeOffice;
